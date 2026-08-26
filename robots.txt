@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dasguardcorenotify-del.github.io/tavemir-legal/sitemap.xml

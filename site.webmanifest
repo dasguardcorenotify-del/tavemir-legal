@@ -1,0 +1,20 @@
+{
+  "name": "Tavemir",
+  "short_name": "Tavemir",
+  "description": "Private, local-first budget and expense tracking for Android.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#071329",
+  "theme_color": "#071329",
+  "icons": [
+    {
+      "src": "assets/tavemir-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
