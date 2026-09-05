@@ -31,21 +31,22 @@
           <tr><td>Reminders and dates</td><td>Track bills, rent, subscriptions, cards, loans and vehicle obligations.</td></tr>
           <tr><td>Debts, receivables and business contacts</td><td>Organize records and linked due dates you enter.</td></tr>
           <tr><td>Preferences and app-lock values</td><td>Remember language, currency, theme and protect app access.</td></tr>
+          <tr><td>Premium entitlement metadata</td><td>Remember the selected plan and a one-way purchase fingerprint for bounded offline continuity. Raw purchase tokens are not added to finance exports or backups.</td></tr>
         </tbody></table>
 
         <h2 id="collection">3. Collection and sharing</h2>
         <p>Tavemir has no advertising SDK, analytics SDK, required cloud account, bank connection or Tavemir-operated sync server. The app does not automatically transmit your finance records to the publisher.</p>
-        <p>Data can leave your device when you explicitly share a PDF, CSV, text or backup file. The destination you select then processes that copy under its own terms. Google Play separately processes store installation and diagnostic information under Google's policies; Tavemir does not receive an in-app analytics feed from that service.</p>
+        <p>Finance data can leave your device when you explicitly share a PDF, CSV, text or backup file. The destination you select then processes that copy under its own terms. If you choose Premium, Google Play Billing separately processes product, purchase, Google-account and payment data needed to sell, restore and manage the purchase under Google's policies. Tavemir receives the Play ownership result but no card number and no in-app analytics feed.</p>
 
         <h2 id="permissions">4. Permissions and device services</h2>
-        <ul><li><strong>Notifications:</strong> used to show reminders you schedule. Android marks reminder content private and can substitute generic lock-screen text when your system privacy setting hides sensitive content.</li><li><strong>Boot completed:</strong> used to restore locally scheduled reminders after a device restart or app update.</li><li><strong>Biometrics:</strong> when enabled, authentication is performed by the operating system; Tavemir does not receive your biometric template.</li></ul>
+        <ul><li><strong>Notifications:</strong> used to show reminders you schedule. Android marks reminder content private and can substitute generic lock-screen text when your system privacy setting hides sensitive content.</li><li><strong>Boot completed:</strong> used to restore locally scheduled reminders after a device restart or app update.</li><li><strong>Google Play Billing:</strong> used only when querying, purchasing, restoring or managing optional Premium products.</li><li><strong>Biometrics:</strong> when enabled, authentication is performed by the operating system; Tavemir does not receive your biometric template.</li></ul>
         <p>Tavemir does not request location, contacts, microphone, camera, phone, SMS or advertising permissions in its Android release manifest.</p>
 
         <h2 id="security">5. Security and backup</h2>
         <p>The optional PIN is stored as a salted, computationally expensive derived value rather than plain text. When launch locking is enabled, Tavemir also re-locks after 30 seconds in the background. This protects app access; it does not encrypt the underlying local records or exported files. Android system backup is disabled for Tavemir app data. Files you explicitly export are readable by anyone or any service you share them with, so choose destinations carefully.</p>
 
         <h2 id="retention">6. Retention, correction and deletion</h2>
-        <p>Local records remain until you edit or delete them, clear Tavemir's app data, or uninstall the app. Tavemir has no server account to delete. A file you exported must be deleted from its destination separately; Tavemir cannot remove copies held by another app or service.</p>
+        <p>Local records remain until you edit or delete them, clear Tavemir's app data, or uninstall the app. Losing or canceling Premium never deletes those finance records. Minimal local entitlement metadata can be replaced or removed when Play ownership is reconciled, app data is cleared, or the app is uninstalled. Tavemir has no server account to delete. A file you exported must be deleted from its destination separately.</p>
 
         <h2 id="children">7. Children</h2>
         <p>Tavemir is a general personal-finance organization tool and is not designed or marketed for children. The app does not knowingly collect children's data through a Tavemir backend because no such backend exists.</p>
