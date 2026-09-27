@@ -16,7 +16,7 @@
     <header class="site-header"><nav class="nav" aria-label="Primary navigation"><a class="brand" href="../"><img src="../assets/tavemir-icon-512.png" alt="" width="40" height="40">TAVEMIR</a><div class="nav-links"><a href="../faq/">FAQ</a><a href="../support/">Support</a><a class="language-link" href="../tr/gizlilik/" lang="tr" hreflang="tr">Türkçe</a></div></nav></header>
     <main class="legal-main" id="main">
       <article class="legal-copy">
-        <p class="notice" data-deploy-date="2026-09-23">Effective / last updated date: 23 September 2026.</p>
+        <p class="notice" data-deploy-date="2026-09-27">Effective / last updated date: 27 September 2026.</p>
 <p class="eyebrow">Privacy &amp; data use</p>
         <h1>Privacy Policy</h1>
         <p class="notice">Tavemir stores the finance records you create on your device, requires no Tavemir account and does not operate an app backend that collects those records. Google Play Billing separately processes purchase history and diagnostics as explained below.</p>
@@ -35,7 +35,9 @@
           <tr><td>Premium entitlement metadata</td><td>Remember the selected plan and a one-way purchase fingerprint for bounded offline continuity. Raw purchase tokens are not added to finance exports or backups.</td></tr>
         </tbody></table>
 
-        <h3 id="local-purchase-diagnostics">Local purchase diagnostics and optional JSON file (+19)</h3>
+        <h3 id="local-trial-record">Local trial record</h3>
+      <p>The trial record is stored locally, separately from financial records. It contains start/end and last-observed times, a used flag and notice preferences. It is not sent to a new analytics service and is excluded from the financial JSON backup. Importing that backup does not start, reset or extend a trial. With no Tavemir account/server/device fingerprint, one trial per person cannot be guaranteed across reinstalling, deleting app data or different devices. Existing Google Play Billing/SDK processing is separate and remains described in this policy.</p>
+      <h3 id="local-purchase-diagnostics">Local purchase diagnostics and optional JSON file (+19)</h3>
         <p>For troubleshooting purchases, restoration and Premium access, Tavemir 1.0.0+19 keeps a limited technical record in application-process memory. It holds up to 256 recent events; older events are discarded as the buffer fills. This memory record is lost when the application process ends. Leaving a screen or putting the app in the background does not necessarily end that process. Tavemir does not automatically save this record to a file or send it to the publisher or support.</p>
         <p>The record can contain event names, sequence numbers and UTC times; session-local operation/query identifiers and their relationships; product type and product ID; actual and upper-layer Billing response codes, returned record counts and attempt numbers; purchase-processing stage and status; a true/false indication that a purchase token is present; filter acceptance or rejection reasons; and the resolved plan, access state and action. It can also record connection, retry, timeout, cancellation and ignored-late-response events.</p>
         <p>This limited record and its JSON export do not contain the raw purchase token, a token hash or purchase fingerprint, order IDs, account information, financial records, raw purchase objects or the provider's free-text debug message. Product IDs and purchase/access states can be present; the file is not a finance backup.</p>
