@@ -16,7 +16,7 @@
     <header class="site-header"><nav class="nav" aria-label="Primary navigation"><a class="brand" href="../"><img src="../assets/tavemir-icon-512.png" alt="" width="40" height="40">TAVEMIR</a><div class="nav-links"><a href="../faq/">FAQ</a><a href="../support/">Support</a><a class="language-link" href="../tr/gizlilik/" lang="tr" hreflang="tr">Türkçe</a></div></nav></header>
     <main class="legal-main" id="main">
       <article class="legal-copy">
-        <p class="notice" data-deploy-date="2026-09-27">Effective / last updated date: 27 September 2026.</p>
+        <p class="notice" data-deploy-date="2026-09-30">Effective / last updated date: 30 September 2026.</p>
 <p class="eyebrow">Privacy &amp; data use</p>
         <h1>Privacy Policy</h1>
         <p class="notice">Tavemir stores the finance records you create on your device, requires no Tavemir account and does not operate an app backend that collects those records. Google Play Billing separately processes purchase history and diagnostics as explained below.</p>
@@ -34,6 +34,11 @@
           <tr><td>Preferences and app-lock values</td><td>Remember language, currency, theme and protect app access.</td></tr>
           <tr><td>Premium entitlement metadata</td><td>Remember the selected plan and a one-way purchase fingerprint for bounded offline continuity. Raw purchase tokens are not added to finance exports or backups.</td></tr>
         </tbody></table>
+
+        <h3 id="smart-entry">Smart Entry and document processing</h3>
+        <p>In versions that include Smart Entry, selected or shared text and images are processed on your device. Suggestions become financial records only after your review and confirmation. Temporary image copies may be kept in private app storage; your original file is not modified. Cleanup runs after completion or cancellation, with unfinished cleanup retried at a later app start.</p>
+        <p>Separately from document content, Google ML Kit may transmit technical device/app information, installation identifiers and usage/performance metrics to evaluate and improve its services. Google describes this processing in its <a href="https://developers.google.com/ml-kit/terms">ML Kit Terms &amp; Privacy</a> and <a href="https://developers.google.com/ml-kit/android-data-disclosure">Android data disclosure</a>. This is separate from the Google Play Billing processing described below. Deleting local records does not mean that Google's technical records have also been deleted.</p>
+        <p>Camera input uses a separate camera app, and choosing an existing image uses Android's document picker. Tavemir does not add broad storage or camera permission for this workflow. Review the proposed amount, date, currency and account before saving; document recognition is not a guarantee of financial accuracy.</p>
 
         <h3 id="local-trial-record">Local trial record</h3>
       <p>The trial record is stored locally, separately from financial records. It contains start/end and last-observed times, a used flag and notice preferences. It is not sent to a new analytics service and is excluded from the financial JSON backup. Importing that backup does not start, reset or extend a trial. With no Tavemir account/server/device fingerprint, one trial per person cannot be guaranteed across reinstalling, deleting app data or different devices. Existing Google Play Billing/SDK processing is separate and remains described in this policy.</p>
